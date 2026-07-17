@@ -3,10 +3,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = ChatGroq(
+model = ChatGroq(
     model = "openai/gpt-oss-120b",
 )
 
-result = llm.invoke("What is the capital of India?")
-
+result = model.invoke("What is the capital of india?")
 print(result.content)
