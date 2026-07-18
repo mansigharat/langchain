@@ -5,13 +5,13 @@ import os
 load_dotenv()
 
 llm = HuggingFaceEndpoint(
-    repo_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    repo_id = "meta-llama/Llama-3.3-70B-Instruct",
     task = "text-generation",
     huggingfacehub_api_token=os.getenv("HUGGINGFACEHUB_API_TOKEN")
 )
 
 model = ChatHuggingFace(llm = llm)
 
-result = model.invoke("What is the capital of india")
+result = model.invoke("What is the capital of india") 
 
 print(result.content)
