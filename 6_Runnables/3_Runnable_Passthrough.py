@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from langchain_core.runnables import RunnableSequence,RunnableParallel,RunnablePassthrough
 
 load_dotenv()
+
 passthrough = RunnablePassthrough()
 
 prompt1 = PromptTemplate(
