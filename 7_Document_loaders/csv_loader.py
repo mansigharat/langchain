@@ -6,3 +6,4 @@ docs = loader.load()
 
 print(len(docs))
 
+print(docs[1])
